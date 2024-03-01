@@ -6,10 +6,10 @@ const db = new sqlite3.Database('database.sqlite');
 // Create the items table
 db.run(`
   CREATE TABLE IF NOT EXISTS items (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    barcode TEXT UNIQUE,
-    name TEXT,
-    price REAL
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Barcode TEXT UNIQUE,
+    Name TEXT,
+    Price DECIMAL(10, 2)
   )
 `);
 
